@@ -1,5 +1,11 @@
-// Placeholder for any future interactivity
-document.querySelector('.contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thank you for reaching out! Your message has been sent.');
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
