@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mithilesh Kamtikar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="landing-page">
-        <div class="overlay">
-            <h1 class="name">Mithilesh Kamtikar</h1>
-            <p class="tagline">AI Enthusiast | Developer</p>
-        </div>
+<body class="bg-gradient-to-b from-indigo-900 via-purple-900 to-gray-900 text-gray-200">
+    <!-- Landing Page -->
+    <header class="h-screen flex flex-col justify-center items-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <img src="A_minimalist_AI-generated_portrait_of_a_young_male.png" alt="Mithilesh" class="rounded-full w-40 h-40 border-4 border-indigo-400 shadow-xl z-10">
+        <h1 class="text-4xl font-bold mt-6 z-10">Mithilesh Kamtikar</h1>
+        <p class="text-lg mt-2 z-10">AI Enthusiast | Developer</p>
     </header>
 
-    <nav class="nav-bar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact" class="highlight">Contact</a>
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-70 py-4 px-6 flex justify-center lg:justify-end gap-6 z-20">
+        <a href="#about" class="text-indigo-300 hover:text-indigo-400 transition">About</a>
+        <a href="#skills" class="text-indigo-300 hover:text-indigo-400 transition">Skills</a>
+        <a href="#experience" class="text-indigo-300 hover:text-indigo-400 transition">Experience</a>
+        <a href="#interests" class="text-indigo-300 hover:text-indigo-400 transition">Interests</a>
+        <a href="#contact" class="text-indigo-400 font-semibold border border-indigo-400 px-3 py-1 rounded-lg hover:bg-indigo-400 hover:text-black transition">Contact</a>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am Mithilesh Kamtikar, born on 28/11/2001. Currently pursuing an MS in Data Science at Lewis University, Romeoville, IL, and holding a B.Tech in Computer Science from MRITS, Hyderabad. My passion is building innovative AI-driven solutions that positively impact lives.</p>
+    <main class="space-y-24 py-16">
+        <!-- About Section -->
+        <section id="about" class="text-center container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-indigo-400">About Me</h2>
+            <p class="mt-4 text-lg">I am Mithilesh Kamtikar, born on 28/11/2001. Currently pursuing an MS in Data Science at Lewis University, Romeoville, IL, and holding a B.Tech in Computer Science from MRITS, Hyderabad. My passion is building innovative AI-driven solutions that positively impact lives.</p>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
+        <!-- Skills Section -->
+        <section id="skills" class="text-center container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-indigo-400">Skills</h2>
+            <ul class="mt-4 space-y-2">
                 <li><strong>Programming:</strong> Python, JavaScript, C++</li>
                 <li><strong>Data Science:</strong> Machine Learning, Deep Learning, NLP</li>
                 <li><strong>Frameworks:</strong> TensorFlow, PyTorch, React</li>
@@ -38,26 +43,30 @@
             </ul>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
+        <!-- Experience Section -->
+        <section id="experience" class="text-center container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-indigo-400">Experience</h2>
+            <ul class="mt-4 space-y-2">
                 <li><strong>Intern at XYZ:</strong> Built ML models for predictive analytics.</li>
                 <li><strong>Freelance Developer:</strong> Developed custom AI solutions for small businesses.</li>
             </ul>
         </section>
 
-        <section id="interests">
-            <h2>Interests</h2>
-            <p>I am deeply passionate about AI advancements, open-source contributions, and creating projects like self-driving algorithms and personalized AI assistants.</p>
+        <!-- Interests Section -->
+        <section id="interests" class="text-center container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-indigo-400">Interests</h2>
+            <p class="mt-4 text-lg">I am deeply passionate about AI advancements, open-source contributions, and creating projects like self-driving algorithms and personalized AI assistants.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:mithileshkamitikar@gmail.com">mithileshkamitikar@gmail.com</a></p>
+        <!-- Contact Section -->
+        <section id="contact" class="text-center container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-indigo-400">Contact</h2>
+            <p class="mt-4 text-lg">Email: <a href="mailto:mithileshkamitikar@gmail.com" class="text-indigo-300 hover:text-indigo-400">mithileshkamitikar@gmail.com</a></p>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-black bg-opacity-50">
         <p>&copy; 2025 Mithilesh Kamtikar. All rights reserved.</p>
     </footer>
 
